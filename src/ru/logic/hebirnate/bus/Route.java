@@ -4,18 +4,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Класс водитель
+ * Класс маршрут
  * Created by dmitry.arefyev on 22.11.2016.
  */
-public class Driver {
+public class Route {
     private Long id;
     private String name;
-    private String surname;
-    private int age;
+    private int number;
     private Set busses = new HashSet();
 
     //Констурктор по умолчанию
-    public Driver() {}
+    public Route() {}
 
     //методы сеттеры
     public void setId(Long id) {
@@ -26,12 +25,8 @@ public class Driver {
         this.name = name;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public void setBusses(Set busses) {
@@ -39,6 +34,7 @@ public class Driver {
     }
 
     //методы геттеры
+
     public Long getId() {
         return id;
     }
@@ -47,17 +43,11 @@ public class Driver {
         return name;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
-    public int getAge() {
-        return age;
+    public int getNumber() {
+        return number;
     }
 
     public Set getBusses() {
         return busses;
     }
-
-
 }
